@@ -23,5 +23,6 @@ Run the development server:
 pnpm dev
 ```
 
-Enjoy playing with the cat and exploring XState integration!
+You can find the app hosted on github page here : https://tobomuto.github.io/xstate_nuxt/ (iso main)
 
+Enjoy playing with the cat and exploring XState integration!
