@@ -1,75 +1,27 @@
-# Nuxt Minimal Starter
+# Nuxt + XState CatMachine
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a simple app built with **Nuxt 4** and **XState** to learn how to use and integrate XState in a Nuxt application.
 
-## Setup
+The app features a little cat you can play with, demonstrating state management using XState.
 
-Make sure to install dependencies:
+## Tech Stack
+- [Nuxt 4](https://nuxt.com/)
+- [XState](https://xstate.js.org/)
+- [@xstate/vue](https://xstate.js.org/docs/packages/xstate-vue/)
+- [pnpm](https://pnpm.io/) (for package management)
 
-```bash
-# npm
-npm install
+## Getting Started
+Install dependencies with:
 
-# pnpm
+```sh
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+Run the development server:
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
+```sh
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Enjoy playing with the cat and exploring XState integration!
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
