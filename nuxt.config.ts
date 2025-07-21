@@ -14,5 +14,10 @@ export default defineNuxtConfig({
     dirs: [
       'machines', // Directory where your XState machines are located
     ],
-  }
+  },
+  fonts: {
+    families: [
+      { name: 'Marcellus', provider: 'google'}
+    ]
+  },
 })

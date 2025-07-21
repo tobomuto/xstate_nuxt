@@ -5,7 +5,11 @@ export default {
   //   './app/pages/**/*.vue',
   // ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'marcellus': ['Marcellus', 'serif'],
+        },
+      },
     },
     plugins: [],
 }
