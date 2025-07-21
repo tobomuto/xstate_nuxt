@@ -5,10 +5,10 @@ const { snapshot, send } = useMachine(catMachine);
 
 <template>
   <main>
-    <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 gap-4">
+    <div class="w-full max-w-4xl mx-auto p-8 sm:px-6 lg:px-8 grid grid-cols-1 gap-4">
       <h1 class="text-center font-bold text-3xl">Gatto-san stato mācchine</h1>
       <div class="grid p-4 gap-4">
-        <q class="text-center">{{ snapshot.value === "ASLEEP" ? "Shhh! Kitty is asleep" : "Kitty is awake! Let's play with him!" }}</q>
+        <q class="text-center">{{ snapshot.context.catchPhrase }}</q>
         <div class="items-center w-full justify-self-center">
           <img v-if="snapshot.value === 'ASLEEP'" src="/img/cat-asleep.png" alt="">
           <img v-else-if="snapshot.matches('AWAKE.WAITING')" src="/img/cat-awake.png" alt="">
@@ -38,7 +38,8 @@ const { snapshot, send } = useMachine(catMachine);
         <div class="mt-4 p-4 border rounded">
           <h3 class="font-semibold mb-2">Current State Info:</h3>
           <div class="space-y-1 text-sm">
-            <div><strong>State Value:</strong> {{ JSON.stringify(snapshot.value) }}</div>
+            <div><strong>State Value:</strong> {{ snapshot.value }}</div>
+            <div><strong>Context:</strong> {{ snapshot.context }}</div>
             <div><strong>All Active States:</strong> {{ snapshot.status }}</div>
             <div><strong>Is Asleep:</strong> {{ snapshot.matches('ASLEEP') }}</div>
             <div><strong>Is Awake & Waiting:</strong> {{ snapshot.matches('AWAKE.WAITING') }}</div>
